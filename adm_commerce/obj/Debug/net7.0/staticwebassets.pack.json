@@ -1,0 +1,37 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Rovsen Novruzov\\Desktop\\Backpractic\\adm_commerce\\adm_commerce\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\adm_commerce.bundle.scp.css",
+      "PackagePath": "staticwebassets\\adm_commerce.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Rovsen Novruzov\\Desktop\\Backpractic\\adm_commerce\\adm_commerce\\wwwroot\\img\\Screenshot 2023-12-14 151931.png9b2a9384-6c88-48de-936e-c196d833bd65.png",
+      "PackagePath": "staticwebassets\\img\\Screenshot 2023-12-14 151931.png9b2a9384-6c88-48de-936e-c196d833bd65.png"
+    },
+    {
+      "Id": "C:\\Users\\Rovsen Novruzov\\Desktop\\Backpractic\\adm_commerce\\adm_commerce\\wwwroot\\img\\Screenshot 2023-12-14 175104.pngfef1a526-11da-46f8-8833-a5af080116d4.png",
+      "PackagePath": "staticwebassets\\img\\Screenshot 2023-12-14 175104.pngfef1a526-11da-46f8-8833-a5af080116d4.png"
+    },
+    {
+      "Id": "C:\\Users\\Rovsen Novruzov\\Desktop\\Backpractic\\adm_commerce\\adm_commerce\\wwwroot\\js\\ProductUpdate.js",
+      "PackagePath": "staticwebassets\\js\\ProductUpdate.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.adm_commerce.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.adm_commerce.props",
+      "PackagePath": "build\\adm_commerce.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.adm_commerce.props",
+      "PackagePath": "buildMultiTargeting\\adm_commerce.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.adm_commerce.props",
+      "PackagePath": "buildTransitive\\adm_commerce.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

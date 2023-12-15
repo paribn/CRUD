@@ -1,0 +1,41 @@
+﻿@model ProductAddVM
+
+<form class="row g-3" asp-controller="Product" asp-action="Add" method="post" enctype="multipart/form-data">
+    <div class="text-danger" asp-validation-summary="All">
+
+    </div>
+    <div class="col-md-6">
+        <label for="1" class="form-label">Product Name</label>
+        <input asp-valid asp-for="Name" type="text" class="form-control" id="1">
+        <span class="text-danger" asp-validation-for="Name"></span>
+    </div>
+    <div class="col-md-6">
+        <label for="2" class="form-label">Product Price</label>
+        <input step="0.1" asp-for="Price" type="number" class="form-control" id="2">
+        <span class="text-danger" asp-validation-for="Price"></span>
+    </div>
+    <div class="col-md-4">
+        <label for="5" class="form-label">Photo</label>
+        <input asp-for="Photo" class="form-control" id="5">
+        <span class="text-danger" asp-validation-for="Photo"></span>
+    </div>
+
+
+    <div class="col-md-4">
+        <label for="4" class="form-label">Category</label>
+        <select asp-for="ProductCategoryId" asp-items="@Model.Category">
+            <option>Please select one</option>
+        </select>
+    </div>
+
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Add product</button>
+    </div>
+
+  
+</form>
+@section ValidationScript{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+}

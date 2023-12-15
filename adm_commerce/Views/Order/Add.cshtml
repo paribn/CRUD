@@ -1,0 +1,33 @@
+﻿@model OrderAddVM
+
+<form class="row g-3" asp-controller="Order" asp-action="Add" method="post" enctype="multipart/form-data">
+    <div class="text-danger" asp-validation-summary="All">
+    </div>
+    <div class="col-md-4">
+        <label for="1" class="form-label">Product</label>
+        <select asp-for="ProductId" asp-items="@Model.Product">
+            <option>Please select one</option>
+        </select>
+    </div>
+
+    <div class="col-md-4">
+        <label for="2" class="form-label">Customer</label>
+        <select asp-for="CustomerId" asp-items="@Model.Customer">
+            <option>Please select one</option>
+        </select>
+    </div>
+    <div class="col-md-4">
+        <label for="3" class="form-label">Creation Date</label>
+        <input asp-for="CreationDate" type="date" class="form-control" id="4">
+        <span class="text-danger" asp-validation-for="CreationDate"></span>
+    </div>
+
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Add </button>
+    </div>
+</form>
+@section ValidationScript{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+}

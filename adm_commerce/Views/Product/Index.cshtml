@@ -1,0 +1,27 @@
+﻿@model ProductIndexVM
+
+
+<a asp-controller="Product" asp-action="Add" class="btn btn-success">Add +</a>
+
+@foreach (var product in Model.Products)
+{
+
+    <div class="card" style="width: 16rem;">
+        <div class="card-body ">
+            <h5 class="card-title">@product.Name</h5>
+            @if (product.ProductImage is null)
+            {
+                <p class="card-text">No photo available</p>
+
+            }
+            else
+            {
+                <img src="~/img/@product.ProductImage.ImageName" style="width:100%"/>
+            }
+            <p class="card-text">Price: @product.Price</p>
+            <p class="card-text">Category: @product.Category.Name</p>
+            <a asp-controller="Product" asp-action="Delete" asp-route-id="@product.Id" class="btn btn-danger">Delete</a>
+            <a asp-controller="Product" asp-action="Update" asp-route-id="@product.Id" class="btn btn-warning">Update</a>
+        </div>
+    </div>
+}

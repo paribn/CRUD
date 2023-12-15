@@ -1,0 +1,21 @@
+﻿@model CategoryUpdateVM
+
+<form class="row g-3" asp-controller="Category" asp-action="Update" method="post">
+    <div class="text-danger" asp-validation-summary="All">
+    </div>
+    <div class="col-md-6">
+        <label for="1" class="form-label">Category Name</label>
+        <input asp-valid asp-for="Name" type="text" class="form-control" id="1">
+        <span class="text-danger" asp-validation-for="Name"></span>
+    </div>
+
+    <div class="col-12">
+        <button type="submit" class="btn btn-primary">Update</button>
+    </div>
+</form>
+
+@section ValidationScript{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+}
