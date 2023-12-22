@@ -1,0 +1,58 @@
+﻿@model ProductIndexVM
+
+
+<a asp-controller="Product" asp-action="Add" class="btn btn-success">Add +</a>
+
+@foreach (var product in Model.Products)
+{
+
+    <div class="card" style="width: 16rem;">
+        <div class="card-body  ">
+            <h5 class="card-title">@product.Name</h5>
+            @if (product.ProductImage is null)
+            {
+                <p class="card-text">No photo available</p>
+
+            }
+            else
+            {
+                <img src="~/img/@product.ProductImage.ImageName" style="width:100%" />
+            }
+            <p class="card-text">Price: @product.Price</p>
+            <p class="card-text">Category: @product.Category.Name</p>
+            @if (User.IsInRole("Admin"))
+            {
+                <a asp-controller="Product" asp-action="Delete" asp-route-id="@product.Id" class="btn btn-danger">Delete</a>
+                <a asp-controller="Product" asp-action="Update" asp-route-id="@product.Id" class="btn btn-warning">Update</a>
+            }
+            else
+            {
+                <a class="btn btn-danger invisible">Delete</a>
+                <a class="btn btn-warning invisible">Update</a>
+
+            }
+        </div>
+    </div>
+}
+
+<br />
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        @for (int i = 1; i <= Model.PageCount; i++)
+        {
+            <li class="page-item"><a class="page-link" @(i == Model.CurrentPage ? "active" : " ") href="#">@i</a></li>
+
+        }
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>

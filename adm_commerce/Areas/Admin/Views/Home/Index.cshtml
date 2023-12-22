@@ -1,0 +1,12 @@
+﻿<h1 style="text-align:center">Welcome ADMIN</h1>
+<p></p>
+
+@*@if (User.Identity.IsAuthenticated)
+{
+    <a class="justify-content-end" asp-controller="Authentication" asp-action="Logout" style="color:red">Logout</a>
+    
+}else{
+
+    <a  asp-controller="Authentication" asp-action="Logout" style="color:red">Login</a>
+
+}*@

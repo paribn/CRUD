@@ -1,0 +1,48 @@
+﻿@model CategoryIndexVM
+
+<a asp-controller="Category" asp-action="Add" class="btn btn-success">Add +</a></div>
+
+
+@foreach (var category in Model.Categories)
+{
+    <table class="table container">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col"> Category Name</th>
+      <th scope="col">Edit </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>@category.Name</td>
+
+    <td>
+    <a asp-controller="Category" asp-action="Delete" asp-route-id="@category.Id" class="btn btn-danger">Delete</a>
+    <a asp-controller="Category" asp-action="Update" asp-route-id="@category.Id" class="btn btn-warning">Update</a>
+    </td>
+
+    </tr>
+        </tbody>
+    </table>
+         
+}
+<br />
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        @for (int i = 1; i <= Model.PageCount; i++)
+        {
+            <li class="page-item"><a class="page-link" href="#">@i</a></li>
+        }
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>

@@ -1,0 +1,49 @@
+﻿@model OrderIndexVM
+
+<a asp-controller="Order" asp-action="Add" class="btn btn-success">Add +</a></div>
+
+
+@foreach (var order in Model.Orders)
+{
+    <table class="table container">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Email</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@order.Product.Name</td>
+                <td>@order.Customer.Email</td>
+                <td>
+                    <a asp-controller="Order" asp-action="Delete" asp-route-id="@order.Id" class="btn btn-danger">Delete</a>
+                    <a asp-controller="Order" asp-action="Update" asp-route-id="@order.Id" class="btn btn-warning">Update</a>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+}
+
+<br />
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        @for (int i = 1; i <= Model.PageCount; i++)
+        {
+            <li class="page-item"><a class="page-link" href="#">@i</a></li>
+        }
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>

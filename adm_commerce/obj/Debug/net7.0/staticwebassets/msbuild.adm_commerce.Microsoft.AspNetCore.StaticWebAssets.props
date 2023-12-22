@@ -16,6 +16,54 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\adm_commerce.bundle.scp.css))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\30009475_3bde13a5-6a8c-412e-9b97-111f72c6173a.webp382605b7-c8d7-4cac-9b5e-1139dafad8e7.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>adm_commerce</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/adm_commerce</BasePath>
+      <RelativePath>img/30009475_3bde13a5-6a8c-412e-9b97-111f72c6173a.webp382605b7-c8d7-4cac-9b5e-1139dafad8e7.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\30009475_3bde13a5-6a8c-412e-9b97-111f72c6173a.webp382605b7-c8d7-4cac-9b5e-1139dafad8e7.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\30009475_3bde13a5-6a8c-412e-9b97-111f72c6173a.webp86e82a68-e57a-4d0a-8c03-f8466fa8465f.webp))">
+      <SourceType>Package</SourceType>
+      <SourceId>adm_commerce</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/adm_commerce</BasePath>
+      <RelativePath>img/30009475_3bde13a5-6a8c-412e-9b97-111f72c6173a.webp86e82a68-e57a-4d0a-8c03-f8466fa8465f.webp</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\30009475_3bde13a5-6a8c-412e-9b97-111f72c6173a.webp86e82a68-e57a-4d0a-8c03-f8466fa8465f.webp))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ex3.pngdf1e8991-15a0-4d47-a29e-efcc80d85c6e.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>adm_commerce</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/adm_commerce</BasePath>
+      <RelativePath>img/ex3.pngdf1e8991-15a0-4d47-a29e-efcc80d85c6e.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\ex3.pngdf1e8991-15a0-4d47-a29e-efcc80d85c6e.png))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\Screenshot 2023-12-14 151931.png9b2a9384-6c88-48de-936e-c196d833bd65.png))">
       <SourceType>Package</SourceType>
       <SourceId>adm_commerce</SourceId>
@@ -32,12 +80,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\Screenshot 2023-12-14 151931.png9b2a9384-6c88-48de-936e-c196d833bd65.png))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\Screenshot 2023-12-14 175104.pngfef1a526-11da-46f8-8833-a5af080116d4.png))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\Screenshot 2023-12-14 151931.pngd0bca7bb-773c-4848-9b68-9711d7ad0827.png))">
       <SourceType>Package</SourceType>
       <SourceId>adm_commerce</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/adm_commerce</BasePath>
-      <RelativePath>img/Screenshot 2023-12-14 175104.pngfef1a526-11da-46f8-8833-a5af080116d4.png</RelativePath>
+      <RelativePath>img/Screenshot 2023-12-14 151931.pngd0bca7bb-773c-4848-9b68-9711d7ad0827.png</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -46,7 +94,39 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\Screenshot 2023-12-14 175104.pngfef1a526-11da-46f8-8833-a5af080116d4.png))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\Screenshot 2023-12-14 151931.pngd0bca7bb-773c-4848-9b68-9711d7ad0827.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\Screenshot 2023-12-14 151931.pngdf7a0d07-4715-40f2-8702-3ce8f47919f2.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>adm_commerce</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/adm_commerce</BasePath>
+      <RelativePath>img/Screenshot 2023-12-14 151931.pngdf7a0d07-4715-40f2-8702-3ce8f47919f2.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\Screenshot 2023-12-14 151931.pngdf7a0d07-4715-40f2-8702-3ce8f47919f2.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\Screenshot 2023-12-14 175104.png152c5e1e-002e-4726-b2a4-7e990d17f90f.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>adm_commerce</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/adm_commerce</BasePath>
+      <RelativePath>img/Screenshot 2023-12-14 175104.png152c5e1e-002e-4726-b2a4-7e990d17f90f.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\Screenshot 2023-12-14 175104.png152c5e1e-002e-4726-b2a4-7e990d17f90f.png))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\ProductUpdate.js))">
       <SourceType>Package</SourceType>

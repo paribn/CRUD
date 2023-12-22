@@ -1,1 +1,44 @@
-﻿<h1 class="text-center">Welcome!</h1>
+﻿@model HomeIndexVM
+
+@foreach (var product in Model.Products)
+{
+
+    <div class="card" style="width: 16rem;">
+        <div class="card-body  ">
+            <h5 class="card-title">@product.Name</h5>
+            @if (product.ProductImage is null)
+            {
+                <p class="card-text">No photo available</p>
+
+            }
+            else
+            {
+                <img src="~/img/@product.ProductImage.ImageName" style="width:100%" />
+            }
+            <p class="card-text">Price: @product.Price</p>
+            <p class="card-text">Category: @product.Category.Name</p>
+        </div>
+    </div>
+}
+
+
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        @for (int i = 1; i <= Model.PageCount; i++)
+        {
+            <li class="page-item"><a class="page-link" @(i == Model.CurrentPage ? "active" : " ") href="#">@i</a></li>
+
+        }
+        <li class="page-item">
+            <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>
